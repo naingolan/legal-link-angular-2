@@ -2,7 +2,8 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 import { MatSidenav } from '@angular/material/sidenav';
-
+//import { LanguageService } from './language-service.service';
+//import { UserService } from './user.service';
 import { Router } from '@angular/router';
 
 
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  implements OnInit, AfterViewInit {
-  title = 'smart-efd-clone2';
+  title = 'legal-link-2';
   @ViewChild('sidenav') sidenav!: MatSidenav;
   isSmallScreen: boolean | undefined;
   isScreenSmall: boolean | undefined;
@@ -28,7 +29,8 @@ export class HomeComponent  implements OnInit, AfterViewInit {
   isLoggedIn: any;
   constructor(
     private breakpointObserver: BreakpointObserver, 
-
+    //private languageService: LanguageService,
+    //private userService: UserService,
     private router:Router
     ) {}
   ngAfterViewInit(): void {
@@ -36,11 +38,23 @@ export class HomeComponent  implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-   
+    // this.userService.createdSignature().subscribe((isLogged: boolean) => {
+    //   this.isLoggedIn = isLogged;
+    // });
     this.breakpointObserver.observe([Breakpoints.Small])
       .subscribe(result => {
         this.isScreenSmall = result.matches;
       });
+
+      // this.languageService.getLanguage().subscribe(language => {
+      //     this.homeText = this.languageService.translate('Home');
+      //     this.reportText = this.languageService.translate('Report');
+      //     this.receiptText = this.languageService.translate('Receipt');
+      //     this.invoiceText = this.languageService.translate('Invoice');
+      //     this.VFDAccountsText = this.languageService.translate('VFD Accounts');
+      //     this.profileText = this.languageService.translate('Profile');
+      //     this.adminDashboardText = this.languageService.translate('Admin Dashboard')
+      //   });
   }
   openUserOptions(): void {
     localStorage.removeItem('authToken');
@@ -57,3 +71,5 @@ export class HomeComponent  implements OnInit, AfterViewInit {
 
  
 }
+
+

@@ -5,14 +5,16 @@ another color: #F9E0BB
 
 */
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;padding:0; }
-*{
+*{  box-sizing: border-box;
     background: #eee;
 }
-html, body{
+html{
     height:100vh;
     width:100vw;
     padding:0;
     margin:0;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    height:100%;
+    width:100%;
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

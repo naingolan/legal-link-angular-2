@@ -1,0 +1,70 @@
+.main{
+    background-color: white;
+    width:100;
+    border-radius: 20px;
+    color:#884A39;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    margin: 20px   ;
+    margin-left:5px;
+    padding: 10px;
+}
+.advocates{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+}
+.advocate{
+    display:flex;
+    flex-direction: row;
+    background-color: white;;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    align-items: center;
+}
+.advocate>img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.advocate>div{
+    background-color: white;
+}
+.header>h2{
+    background-color: white;
+    font-weight: 900;
+}
+.advocate>button{
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    border:1px solid #884A39;
+    background-color: white;
+}
+.advocate>button>mat-icon{
+    color:#884A39;
+    background-color: white;
+}
+.advocate>button:hover{
+    background-color: #884A39;
+    color:white;
+}
+.advocate>button:hover>mat-icon{
+    color:white;
+    background-color: #884A39;
+}
+.advocate>div>p{
+font-size: small;
+padding:0;
+margin:0;
+background-color: white;
+}
+.advocate>div>h3{
+    background-color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
