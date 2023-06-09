@@ -91,3 +91,8 @@ textarea {
 label{
     background-color: white;
 }
+
+.posted{
+    background-color: white !important;
+    width: fit-content;
+}

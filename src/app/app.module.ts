@@ -25,7 +25,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { PostComponent } from './post/post.component';
 import { CreatePostComponent } from './create-post/create-post.component';
-
+import { PostService } from './post.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -50,9 +51,12 @@ import { CreatePostComponent } from './create-post/create-post.component';
     MatCardModule,
     MatListModule,
     MatSidenavModule,
+    FormsModule
     
   ],
-  providers: [],
+  providers: [
+    PostService 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,29 +1,42 @@
 <main>
-<div class="create">
-<div class="image">
-    <img src="assets/post.png">
-</div>
-<div class="creator">
-    <textarea placeholder="Write something here!"></textarea>
-    <div class="downer">
-        <div class="image-upload">
-            <input type="file" id="image-input">
+    <div class="create">
+      <div class="image">
+        <img src="assets/post.png">
+      </div>
+      <div class="creator">
+        <textarea [(ngModel)]="postContent" placeholder="Write something here!"></textarea>
+            <!-- Preview Section -->
+    <div  *ngIf="selectedImage || selectedVideo || postContent" class="posted">
+        <div *ngIf="selectedImage">
+          <img [src]="selectedImageURL" alt="Selected Image Preview">
+        </div>
+        <div *ngIf="selectedVideo">
+          <video controls>
+            <source [src]="selectedVideoURL" type="video/mp4">
+          </video>
+        </div>
+      </div>
+        
+        
+        
+        <div class="downer">
+          <div class="image-upload">
+            <input type="file" id="image-input" (change)="onImageUpload($event)">
             <label for="image-input">
               <mat-icon class="iconer">image</mat-icon>
             </label>
           </div>
           <div class="image-upload">
-            <input type="file" id="image-input">
-            <label for="image-input">
+            <input type="file" id="video-input" (change)="onVideoUpload($event)">
+            <label for="video-input">
               <mat-icon class="iconer">video_library</mat-icon>
             </label>
           </div>
-        <span class="spacer"></span>
-          
-        <button>
-            <mat-icon class="iconer">send</mat-icon>
-        </button>
+          <span class="spacer"></span>
+          <button (click)="onSubmit()">Submit</button>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-</main>
+    
+  </main>
+  
