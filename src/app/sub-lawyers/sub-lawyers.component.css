@@ -4,7 +4,7 @@
     border-radius: 20px;
     color:#884A39;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
-    margin: 20px   ;
+    margin: 34px  20px  ;
     margin-left:0;
     padding: 10px;
 }
@@ -29,12 +29,17 @@
     border-radius: 50%;
     margin-right: 10px;
 }
+.spacer{
+    width:20px;
+    background-color: white;
+}
 .advocate>div{
     background-color: white;
 }
 .header>h2{
     background-color: white;
     font-weight: 900;
+    padding-left: 10px;
 }
 .advocate>button{
     width:100px;
@@ -67,4 +72,14 @@ background-color: white;
     font-weight: bold;
     padding:0;
     margin:0;
+}
+.seemore{
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    border:1px solid #884A39;
+    align-self: center;
+    background-color: white;
+    color:#884A39;
+    margin:5px;
 }
