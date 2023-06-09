@@ -1,6 +1,9 @@
 export interface Post {
     content: string;
-    image: File | null;
-    video: File | null;
+    likes: number;
+    bookmarks: number;
+    comments: number;
+    image?: File|any;
+    video?: File|any;
   }
   
