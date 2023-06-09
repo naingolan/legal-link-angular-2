@@ -1,0 +1,68 @@
+
+<mat-drawer-container class="container">
+  <mat-drawer #sidenav [mode]="isScreenSmall ? 'over' : 'side'" [opened]="!isScreenSmall">
+    <mat-nav-list class="nav-list">
+        <img src="assets/law.png">
+        <ul class="fornav">
+          <li>
+            <a href="" routerLinkActive="router-link-active" >
+            <div>
+              <mat-icon color="white">home</mat-icon>
+            </div>
+            <div>Home</div>
+          </a>       
+          </li>
+          <li>
+            <a href="" routerLinkActive="router-link-active" >
+            <div>
+              <mat-icon color="white">home</mat-icon>
+            </div>
+            <div>Home</div>
+          </a>       
+          </li>
+          <li>
+            <a href="" routerLinkActive="router-link-active" >
+            <div>
+              <mat-icon color="white">home</mat-icon>
+            </div>
+            <div>Home</div>
+          </a>       
+          </li>
+          <li>
+            <a href="" routerLinkActive="router-link-active" >
+            <div>
+              <mat-icon color="white">home</mat-icon>
+            </div>
+            <div>Home</div>
+          </a>       
+          </li>
+        </ul>
+      </mat-nav-list>  
+  </mat-drawer>
+  
+    <mat-drawer-content>
+      <mat-toolbar color="primary">
+        <button class="butt"  (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        <button class="butt">
+          <mat-icon>language</mat-icon>
+        </button>
+        <button class="butt">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-toolbar>
+      <div class="router">
+      <app-post></app-post>
+      </div>
+    </mat-drawer-content>
+    <mat-drawer>
+
+  <div class="right-side">
+    Hello
+  </div>
+</mat-drawer>
+
+  </mat-drawer-container>
+  

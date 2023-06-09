@@ -1,0 +1,93 @@
+.create{
+    padding:10px;
+    border-radius: 10px;
+    border:1px solid white;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.image{
+    background-color:white;
+}
+.image>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+main{
+    padding:20px 0;
+    background-color:none;
+}
+.creator{
+    padding:20px;
+    background-color: white;
+    width:100%;
+
+}
+.spacer{
+    width:90%;
+    background-color: white;
+}
+.creator>textarea{
+    border-radius: 10px;
+    border:none;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    ;
+}
+textarea {
+    resize: none; /* Hide the resize handles */
+    border: 1px solid; /* Use default border style */
+    border-radius: 4px; /* Add border radius if desired */
+    outline: none; /* Remove the default outline on focus */
+  }
+  
+  textarea::placeholder {
+    color: black;
+    /* Customize the font of the placeholder */
+    font-family: roboto !important; /* Use the default font-family */
+  }
+  
+  textarea:focus {
+    border-color: #ccc; /* Replace with the desired color */
+  }
+  
+.downer{
+    display: flex;
+    flex-direction: row;
+    margin:20px 0;
+    margin-bottom: 10px !important;
+    background-color: white;
+}
+.downer>button{
+    align-self:flex-end;
+    background-color: white;
+    border:1px solid #884A39;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+.image-upload input[type="file"] {
+    display: none;
+  }
+
+.iconer{
+    background-color: white;
+    font-size: 26px;
+    color:#884A39;
+}
+.image-upload{
+    background-color: white;
+    margin-right: 10px;
+}
+.downer{
+    background-color: white;
+}
+label{
+    background-color: white;
+}

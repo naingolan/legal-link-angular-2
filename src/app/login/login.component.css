@@ -1,0 +1,45 @@
+main{
+    padding:15% 0;
+    width:80%;
+    border-radius:10px;
+    border:5px solid #884A39;
+    margin:10%;
+    background-color:white !important;
+
+
+}
+main>*, main>*>*{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+}
+.fields{
+    width:80%;
+    margin:4% ;
+    background-color:white;
+    ;
+}
+.fields>*{
+    margin-top:30px;
+    height: 50px;
+}
+.fields>button{
+    border:none;
+    border-radius:20px;
+    background-color:#884A39 !important;
+    width:60%;
+}
+mat-card-title{
+    font-size: 30px;
+    color:#884A39;
+    background-color:white;
+    margin:0 auto;
+    padding:0 40%;
+    font-weight: bold;
+}
+mat-card-header{
+    background-color: white;
+}
+a{
+    margin:10px auto;
+}

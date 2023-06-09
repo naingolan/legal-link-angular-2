@@ -1,0 +1,18 @@
+/*
+background color: #884A39
+another color: #C38154
+another color: #F9E0BB
+
+*/
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;padding:0; }
+*{
+    background: #eee;
+}
+html, body{
+    height:100vh;
+    width:100vw;
+    padding:0;
+    margin:0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
