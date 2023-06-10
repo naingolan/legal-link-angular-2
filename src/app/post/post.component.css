@@ -2,16 +2,19 @@ main{
     width: 100%;
     height: 100%;
     margin:0;
+    color:#884A39;
 }
 .post{
     background-color: white;
     width:auto;
-    height: auto;
+    height: fit-content;
     border:1px solid white;
-    border-radius: 10px;
-    padding-right:10px;
+    border-radius: 20px;
+    padding:0 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .wrapper>img{
     border-radius: 10px;
@@ -23,6 +26,7 @@ main{
     padding:0;;
     margin-left:47px;
     background-color: white;
+    height: auto;
 }
 .header{
     display:flex;
@@ -30,6 +34,7 @@ main{
     padding: 10px;
     background-color: white;
     margin:0;
+    margin-bottom: 25px;
     height:24px;
 }
 .header>span{

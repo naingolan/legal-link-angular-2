@@ -14,6 +14,8 @@
 .content-wrapper {
   flex: 1;
   transition: transform 0.3s ease;
+  padding:0;
+  margin:0;
 }
 
 /* Apply transform when the sidebar is opened */
@@ -32,6 +34,8 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
+  padding:0;
+  margin:0;
 }
 
 /* Define styles for the mat-drawer-content */
@@ -42,6 +46,8 @@
   margin: 0;
   background-color: white;
   transition: transform 0.3s ease;
+  padding:0;
+  margin:0;
 }
 
 /* Apply transform when the sidebar is opened */
@@ -61,6 +67,20 @@
   margin:0;
   padding:0;
 }
+.mat-toolbar>button{
+  background-color: #884A39;
+  border:none;
+}
+.mat-toolbar>button>mat-icon{
+  background-color: #884A39;
+  border:none;
+  color:white;
+  font-size: 32px;
+}
+.mat-toolbar>button>:nth-child(2){
+  margin-right: 5%;
+}
+
 
 /* Define styles for the right sidebar */
 .right-sider {
@@ -108,13 +128,15 @@
 .content > *:nth-child(1) {
   width:50%;
   padding: 10px 20px;
-
+  margin:0;
 }
 
 /* Define styles for the navigation list */
 mat-drawer{
   margin:0;
-  padding:0;;
+  padding:0 !important;
+  width:auto !important;
+  border-width: 1;
 }
 .nav-list {
   width: 250px;
@@ -131,32 +153,43 @@ mat-drawer{
   margin:0;
 }
 /* Define styles for the navigation list items */
+.fornav>li:nth-child(1){
+  align-items: flex-start;
+  height: 100px;
+}
 .fornav > li {
   list-style-type: none;
   background-color: #884A39;
-  margin: 0px 0;
+  margin: 0;
   padding: 0;
-  width: 95%;
+  width: 100%;
+  height: 75px;
 }
 
 .fornav > li > a {
-  padding: 0 10%;
+  padding: 0 15%;
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: white;
   background-color: #884A39;
   width: auto;
-  height: 50px;
+  height: 68px;
   margin: 0;
   border-radius: 10px;
   text-align: center;
+  font-size: xx-large !important;
+}
+.fornav>li>a:hover{
+ border: 1px solid white;
+ border-radius: 50px;
+ background-color: #926f65;
+ transition-duration: 1s;
 }
 
 .fornav > li > a > div {
   color: white;
   background-color: #884A39 !important;
-  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -174,16 +207,33 @@ mat-drawer{
 .fornav > li > a > div > mat-icon {
   color: white;
   background-color: #884A39 !important;
-  width: 40%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+  font-size:32px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.fornav>li>a:hover>div{
+  border:1px solid white;
+  background-color: #926f65;
+  border:none
+}
+.fornav>li>a:hover>div>mat-icon{
+background-color:#926f65;
+border:none;
+}
+.fornav>li>a:hover>div>*{
+  background-color: #926f65 !important;
 }
 
+.title{
+  font-size: xx-large;
+  font-weight: bolder;
+
+}
 /* Define styles for the navigation list item */
 .nav-list-item {
   display: flex;

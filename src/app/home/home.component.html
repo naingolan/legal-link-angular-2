@@ -4,12 +4,13 @@
         <mat-nav-list class="nav-list">
           <!-- <img src="assets/smartefd.png"> -->
           <ul class="fornav">
+            <li class="alone"></li>
             <li>
               <a href="" routerLinkActive="router-link-active" >
               <div>
                 <mat-icon color="white">home</mat-icon>
               </div>
-              <div>Home</div>
+              <div class="title">Home</div>
             </a>       
             </li>
             <li>
@@ -40,7 +41,7 @@
         </mat-nav-list>
     </mat-drawer>
     <mat-toolbar class="mat-toolbar" color="primary">
-     <button mat-icon-button (click)="sidenav.toggle()">
+     <button  (click)="sidenav.toggle()">
       <mat-icon >menu</mat-icon>
     </button>
     <span class="spacer"></span>
@@ -48,7 +49,7 @@
     <mat-menu #languageMenu="matMenu">
     <app-language-selection></app-language-selection>
     </mat-menu> -->
-    <button mat-icon-button (click)="openUserOptions()">
+    <button  (click)="openUserOptions()">
       <mat-icon color="yellow">account_circle</mat-icon>
     </button>
     </mat-toolbar>
