@@ -212,17 +212,18 @@ mat-drawer{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size:32px;
+  font-size:28px;
   margin-right: 10px;
   border-radius: 20px;
 }
 .fornav>li>a:hover>div{
   border:1px solid white;
-  background-color: #926f65;
-  border:none
+  background-color: #926f65 !important;
+  border:none;
+  transition: 1s;
 }
-.fornav>li>a:hover>div>mat-icon{
-background-color:#926f65;
+.fornav>li>a:hover>*>*{
+background-color:black !important;
 border:none;
 }
 .fornav>li>a:hover>div>*{
