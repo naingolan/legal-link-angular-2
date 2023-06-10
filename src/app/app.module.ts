@@ -28,6 +28,7 @@ import { CreatePostComponent } from './create-post/create-post.component';
 import { PostService } from './post.service';
 import { FormsModule } from '@angular/forms';
 import { SubLawyersComponent } from './sub-lawyers/sub-lawyers.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { SubLawyersComponent } from './sub-lawyers/sub-lawyers.component';
     HomeComponent,
     PostComponent,
     CreatePostComponent,
-    SubLawyersComponent
+    SubLawyersComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
