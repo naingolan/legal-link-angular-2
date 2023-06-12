@@ -29,6 +29,10 @@ import { PostService } from './post.service';
 import { FormsModule } from '@angular/forms';
 import { SubLawyersComponent } from './sub-lawyers/sub-lawyers.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductsComponent } from './products/products.component';
+import { BodyComponent } from './body/body.component';
 
 
 @NgModule({
@@ -41,7 +45,11 @@ import { ProfileComponent } from './profile/profile.component';
     PostComponent,
     CreatePostComponent,
     SubLawyersComponent,
-    ProfileComponent
+    ProfileComponent,
+    SidenavComponent,
+    DashboardComponent,
+    ProductsComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
